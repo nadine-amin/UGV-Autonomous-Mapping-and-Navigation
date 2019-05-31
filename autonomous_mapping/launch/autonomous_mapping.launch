@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+
+
+
+  
+  <node name="autonomous_mapping" pkg="autonomous_mapping" type="autonomous_mapping" output="screen" >
+	<rosparam command="load" file="$(find autonomous_mapping)/config/config.yaml" />
+        <!--<remap from="/cmd_vel" to="cmd_vel_mux/input/teleop"/>-->
+  </node>
+  
+
+    
+
+</launch>

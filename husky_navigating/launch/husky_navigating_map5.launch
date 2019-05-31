@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+
+
+  <include file="$(find husky_gazebo)/launch/husky_map5.launch"/>
+
+  <include file="$(find chefbot_gazebo)/launch/amcl_demo_map5.launch"/>
+  
+  <node name="simple_navigation_goals" pkg="simple_navigation_goals" type="simple_navigation_goals" output="screen" >
+  </node>
+
+ <node name="rviz" pkg="rviz" type="rviz" args="-d $(find chefbot_bringup)/rviz/navigation.rviz"/>
+  
+
+    
+
+</launch>
